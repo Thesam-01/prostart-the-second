@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ProStart Academy trains fresh graduates and NYSC corps members for the corporate world.">
+  <title>ProStart Academy | Step into the corporate world with confidence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">PS</span>
+        <span class="logo-text">ProStart Academy</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="banking.html">Banking</a></li>
+        <li><a href="tech-telecoms.html">Tech and Telecoms</a></li>
+        <li><a href="oil-gas.html">Oil and Gas</a></li>
+        <li><a href="public-sector.html">Public Sector and NGOs</a></li>
+        <li><a href="index.html#corporate">For companies</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Preface: logo, name and tagline -->
+    <section class="hero" id="top">
+      <div class="hero-logo" aria-hidden="true">PS</div>
+      <h1>ProStart Academy</h1>
+      <p class="tagline">We help fresh graduates and NYSC corps members step into the corporate world with confidence, good character, and a hunger to keep learning.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#sectors">Choose your sector</a>
+        <a class="btn btn-outline" href="#corporate">Book a seminar for your company</a>
+      </div>
+    </section>
+
+    <div class="content-wrap">
+      <div class="main-column">
+
+        <!-- What we are, have and do -->
+        <section class="about" id="about">
+          <h2>About ProStart Academy</h2>
+          <figure class="about-image">
+            <img src="images/home.jpg" alt="A facilitator presenting to a room of young professionals in front of a screen showing charts" width="1200" height="800" loading="lazy">
+          </figure>
+          <div class="about-grid">
+            <article>
+              <h3>What we are</h3>
+              <p>ProStart Academy is a training community for people about to start their careers. We focus on the behaviour, ethics, and habits that help new staff settle into a workplace and be respected quickly.</p>
+            </article>
+            <article>
+              <h3>What we have</h3>
+              <p>We have sector-focused programmes, experienced facilitators, and practical sessions where you rehearse real workplace situations before you face them.</p>
+            </article>
+            <article>
+              <h3>What we do</h3>
+              <p>We run training sessions for graduates and NYSC leavers, and seminars for companies that want to prepare their new intake.</p>
+            </article>
+          </div>
+
+          <div class="objective-aim">
+            <article>
+              <h3>Our objective</h3>
+              <p>To help new professionals blend into their new work environments, understand corporate ethics, and avoid the mistakes that slow down a career.</p>
+            </article>
+            <article>
+              <h3>Our aim</h3>
+              <p>To raise professionals who stay open to learning beyond the classroom, and who apply what they know in any organisation they join.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Sector switcher: each card links to its own page -->
+        <section class="sectors" id="sectors">
+          <h2>Choose your sector</h2>
+          <p>Every workplace has its own culture. Pick the sector you are heading into to see how we prepare you.</p>
+          <div class="sector-grid">
+            <a class="card banking" href="banking.html">
+              <h3>Banking and Finance</h3>
+              <p>Trust, customer care, and handling money with integrity.</p>
+            </a>
+            <a class="card tech" href="tech-telecoms.html">
+              <h3>Tech and Telecoms</h3>
+              <p>Fast-moving teams, clear communication, and constant learning.</p>
+            </a>
+            <a class="card oilgas" href="oil-gas.html">
+              <h3>Oil and Gas</h3>
+              <p>Safety, procedure, and working well in demanding settings.</p>
+            </a>
+            <a class="card public" href="public-sector.html">
+              <h3>Public Sector and NGOs</h3>
+              <p>Accountability, service, and earning public trust.</p>
+            </a>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Aside: for HR departments that want a seminar for new staff -->
+      <aside class="corporate-aside" id="corporate" aria-labelledby="corporate-title">
+        <h2 id="corporate-title">For HR teams and companies</h2>
+        <p>Bringing in new staff? We can run a coaching seminar for your new intake. Tell us about your company and we will get back to you.</p>
+
+        <form id="corporate-form" action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="company">Company name</label>
+            <input type="text" id="company" name="company" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-person">Contact person</label>
+            <input type="text" id="contact-person" name="contact-person" required>
+          </div>
+          <div class="form-group">
+            <label for="job-title">Job title</label>
+            <input type="text" id="job-title" name="job-title">
+          </div>
+          <div class="form-group">
+            <label for="work-email">Work email</label>
+            <input type="email" id="work-email" name="work-email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="sector">Sector</label>
+            <select id="sector" name="sector">
+              <option value="">Select a sector</option>
+              <option value="banking">Banking and Finance</option>
+              <option value="tech">Tech and Telecoms</option>
+              <option value="oilgas">Oil and Gas</option>
+              <option value="public">Public Sector and NGOs</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="headcount">Number of new staff</label>
+            <input type="number" id="headcount" name="headcount" min="1">
+          </div>
+          <div class="form-group">
+            <label for="message">Anything we should know?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <p id="form-message" class="form-message" role="alert"></p>
+          <button type="submit" class="btn">Request a seminar</button>
+        </form>
+      </aside>
+    </div>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <div class="contact-intro">
+          <p class="contact-eyebrow">Get in touch</p>
+          <h2 id="contact-title">Contact us</h2>
+          <p>Questions about a programme, or ready to book a seminar for your new staff? Reach us directly.</p>
+        </div>
+        <!-- Replace these with your real contact details -->
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:hello@prostartacademy.example">hello@prostartacademy.example</a>
+          </li>
+          <li>
+            <span class="contact-label">Phone</span>
+            <a href="tel:+2349115178165">+234 911 517 8165</a>
+          </li>
+          <li>
+            <span class="contact-label">Seminars</span>
+            <a href="#corporate">Request a seminar for your company</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 ProStart Academy. Training the next generation of professionals.</p>
+    <ul class="footer-links">
+      <li><a href="banking.html">Banking</a></li>
+      <li><a href="tech-telecoms.html">Tech and Telecoms</a></li>
+      <li><a href="oil-gas.html">Oil and Gas</a></li>
+      <li><a href="public-sector.html">Public Sector and NGOs</a></li>
+    </ul>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

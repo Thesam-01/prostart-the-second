@@ -1,0 +1,5 @@
+:root {
+  --accent: var(--c-oilgas);
+  --accent-text: light-dark(#A16207, #FACC15);
+  --on-accent: #1C1400;
+}
